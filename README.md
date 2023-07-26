@@ -4,4 +4,6 @@
 
 IP 158.160.21.38
 
+Frontend
+
 Backend api.movies.generalovpn.nomoreparties.sbs
