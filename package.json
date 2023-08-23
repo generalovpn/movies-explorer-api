@@ -1,7 +1,7 @@
 {
   "name": "movies-explorer-api",
   "version": "1.0.0",
-  "description": "Диплом - бэкэнд",
+  "description": "Дипломный проект - бэкенд",
   "main": "app.js",
   "scripts": {
     "lint": "npx eslint .",
@@ -26,6 +26,7 @@
     "winston": "^3.10.0"
   },
   "devDependencies": {
+    "cross-env": "^7.0.3",
     "eslint": "^8.45.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.27.5",
