@@ -15,16 +15,13 @@ const auth = (req, res, next) => {
   let payload;
 
   try {
-    // попытаемся верифицировать токен
     payload = jwt.verify(token, NODE_ENV === 'production' ? JWT_SECRET : KEY_PASSWORD);
-    // payload = jwt.verify(token, 'unique-secret-key');
   } catch (err) {
-    // отправим ошибку, если не получилось
     throw new UnauthorizedError('Необходима авторизация');
   }
-  req.user = payload; // записываем пейлоуд в объект запроса
+  req.user = payload;
 
-  next(); // пропускаем запрос дальше
+  next();
 };
 
 module.exports = auth;
