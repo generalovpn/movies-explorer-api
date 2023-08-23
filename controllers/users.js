@@ -9,7 +9,6 @@ const UnauthorizedError = require('../errors/UnauthorizedError');
 const ValidationError = require('../errors/ValidationError');
 
 const SALT_ROUNDS = 10;
-// const JWT_SECRET = 'unique-secret-key';
 const { NODE_ENV, JWT_SECRET } = process.env;
 const KEY_PASSWORD = 'somepassword';
 
