@@ -2,6 +2,6 @@
 
 Адрес репозитория: https://github.com/generalovpn/movies-explorer-api
 
-IP 
+IP 51.250.89.111
 
-Backend 
+Backend https://api.movies.generalovpn.nomoreparties.sbs
