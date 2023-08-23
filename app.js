@@ -17,10 +17,7 @@ mongoose.connect(DB_URL);
 
 app.use(helmet());
 app.use(requestLogger);
-app.use(cors({
-  origin: ['http://localhost:3000', 'http://api.movies.generalovpn.nomoreparties.sbs'],
-  credentials: true,
-}));
+app.use(cors({ origin: true, credentials: true }));
 app.options('/', cors());
 app.use(limiter);
 app.use(cookieParser());
