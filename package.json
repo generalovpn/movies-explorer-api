@@ -6,7 +6,7 @@
   "scripts": {
     "lint": "npx eslint .",
     "start": "node app.js",
-    "dev": "nodemon app.js"
+    "dev": "cross-env NODE_ENV=production nodemon app.js"
   },
   "author": "generalovpn",
   "license": "ISC",
