@@ -33,7 +33,7 @@ app.use(requestLogger);
 
 app.use(limiter);
 
-app.use(cors({ origin: ['http://movies.generalovpn.nomoreparties.sbs'], credentials: true }));
+app.use(cors({ origin: true, credentials: true }));
 
 app.use(routes);
 
